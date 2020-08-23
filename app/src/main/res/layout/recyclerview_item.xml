@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_view_style">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_nombre"
+            tools:text="NOMBRE"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_estructura"
+            tools:text="ESTRUCTURA"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_alimentacion"
+            tools:text="ALIMENTO"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_continente"
+            tools:text="CONTINENTE"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

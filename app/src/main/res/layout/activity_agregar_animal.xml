@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarAnimal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="NOMBRE"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/edt_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="ESTRUCTURA"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:id="@+id/cmb_estructura"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="ALIMENTACION"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:id="@+id/cmb_alimentacion"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="CONTINENTE"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:id="@+id/cmb_continente"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_agregar_animal"
+                android:text="AGREGAR ANIMAL"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
